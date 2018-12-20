@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <EditText
+        android:id="@+id/first_edit"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Type your first number here..." />
+
+    <EditText
+        android:id="@+id/second_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:hint="Type your second number here..." />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="273dp"
+        android:layout_height="45dp"
+        android:hint="Answer is here!"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="220dp"
+        android:text="answer is here!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="196dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="运算类型:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/bt_sub"
+            android:layout_width="69dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/bt_mul"
+            android:layout_width="77dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/bt_div"
+            android:layout_width="76dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="111dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/answer"
+        android:gravity="center"
+        android:text="CLEAR"
+         />
+
+
+</RelativeLayout>
